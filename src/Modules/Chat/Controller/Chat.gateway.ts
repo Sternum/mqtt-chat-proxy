@@ -8,7 +8,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { ChatService } from '../Services/Chat.service';
 
-@WebSocketGateway({ cors: true, transports: ['polling'] })
+@WebSocketGateway({ cors: true, transports: ['websocket'] })
 export class ChatGateway
   implements OnGatewayConnection, OnGatewayInit, OnGatewayDisconnect
 {
